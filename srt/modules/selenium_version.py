@@ -1,5 +1,6 @@
 import selenium
 
+
 def get_selenium_version():
     try:
         version = selenium.__version__
@@ -7,3 +8,6 @@ def get_selenium_version():
     except Exception as e:
         print("An error occurred:", e)
         return None
+
+
+print(get_selenium_version())
